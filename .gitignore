@@ -1,0 +1,5 @@
+*.lck
+*.*#*
+*.swp
+env
+.DS_Store
