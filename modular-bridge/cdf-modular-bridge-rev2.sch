@@ -523,13 +523,13 @@ Version 1.0&lt;br&gt;
 <wire x1="-2.15" y1="1.03" x2="-2.15" y2="1.3" width="0.1524" layer="21"/>
 <wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.1524" layer="21"/>
 <wire x1="2.15" y1="1.3" x2="2.15" y2="1.03" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="1.03" width="0.1524" layer="51"/>
-<wire x1="2.15" y1="-1.03" x2="2.15" y2="1.03" width="0.1524" layer="51"/>
+<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="1.03" width="0.1524" layer="21"/>
+<wire x1="2.15" y1="-1.03" x2="2.15" y2="1.03" width="0.1524" layer="21"/>
 <rectangle x1="-1.65" y1="0.95" x2="-1.15" y2="1.3" layer="21"/>
 <rectangle x1="-1.65" y1="-1.3" x2="-1.15" y2="-0.95" layer="21"/>
-<rectangle x1="-1.65" y1="-0.95" x2="-1.15" y2="0.95" layer="51"/>
-<rectangle x1="-2.6" y1="-0.72" x2="-2.15" y2="0.72" layer="51"/>
-<rectangle x1="2.15" y1="-0.72" x2="2.6" y2="0.72" layer="51"/>
+<rectangle x1="-1.65" y1="-0.95" x2="-1.15" y2="0.95" layer="21"/>
+<rectangle x1="-2.6" y1="-0.72" x2="-2.15" y2="0.72" layer="21"/>
+<rectangle x1="2.15" y1="-0.72" x2="2.6" y2="0.72" layer="21"/>
 <text x="-2.1" y="1.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
