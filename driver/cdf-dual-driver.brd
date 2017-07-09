@@ -2143,12 +2143,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="12.7" y="13.97" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="19.939" y="12.954" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="GATE_IN" library="con-ptr500" package="AK500/3" value="" x="3.556" y="56.134" smashed="yes" rot="R270">
-<attribute name="MF" value="" x="3.556" y="56.134" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="3.556" y="56.134" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="3.556" y="56.134" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="3.556" y="56.134" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-2.159" y="63.7286" size="1.778" layer="27" ratio="10" rot="R270"/>
+<element name="GATE_IN" library="con-ptr500" package="AK500/3" value="" x="3.556" y="55.118" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="3.556" y="55.118" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="3.556" y="55.118" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="3.556" y="55.118" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="3.556" y="55.118" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-2.159" y="62.7126" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R2" library="microbuilder" package="0805" value="470" x="1.778" y="32.766" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.651" y="30.734" size="0.8128" layer="25" ratio="18" rot="R270"/>
@@ -2683,8 +2683,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$24">
 <contactref element="IC3" pad="13"/>
 <contactref element="GATE_IN" pad="1"/>
-<wire x1="8.636" y1="42.6974" x2="8.636" y2="56.0578" width="0.6096" layer="1"/>
-<wire x1="8.636" y1="56.0578" x2="3.556" y2="61.1378" width="0.6096" layer="1"/>
+<wire x1="8.636" y1="42.6974" x2="8.636" y2="55.0418" width="0.6096" layer="1"/>
+<wire x1="8.636" y1="55.0418" x2="3.556" y2="60.1218" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="IC3" pad="9"/>
@@ -2695,8 +2695,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.128" y1="40.64" x2="5.588" y2="38.1" width="0.6096" layer="1"/>
 <wire x1="5.588" y1="38.1" x2="4.064" y2="38.1" width="0.6096" layer="1"/>
 <wire x1="4.064" y1="38.1" x2="2.54" y2="39.624" width="0.6096" layer="1"/>
-<wire x1="2.54" y1="39.624" x2="2.54" y2="50.1142" width="0.6096" layer="1"/>
-<wire x1="2.54" y1="50.1142" x2="3.556" y2="51.1302" width="0.6096" layer="1"/>
+<wire x1="2.54" y1="39.624" x2="2.54" y2="49.0982" width="0.6096" layer="1"/>
+<wire x1="2.54" y1="49.0982" x2="3.556" y2="50.1142" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>
