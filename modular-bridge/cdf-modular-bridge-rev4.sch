@@ -214,7 +214,7 @@
 <circle x="-0.01" y="0" radius="3.85" width="0.127" layer="21"/>
 <pad name="E" x="-44.21" y="-5.45" drill="1.778" diameter="3.81" shape="long"/>
 <pad name="C" x="-44.21" y="0" drill="1.778" diameter="3.81" shape="long"/>
-<pad name="G" x="-44.21" y="5.45" drill="1.778" diameter="3.81" shape="long"/>
+<pad name="G" x="-44.21" y="5.45" drill="1.778" diameter="2.54" shape="long"/>
 <text x="-49.71" y="7" size="1.27" layer="25">G</text>
 <text x="-49.71" y="1.5" size="1.27" layer="25">C</text>
 <text x="-49.71" y="-4.5" size="1.27" layer="25">E</text>
@@ -554,13 +554,13 @@ Version 1.0&lt;br&gt;
 <wire x1="-2.15" y1="1.03" x2="-2.15" y2="1.3" width="0.1524" layer="21"/>
 <wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.1524" layer="21"/>
 <wire x1="2.15" y1="1.3" x2="2.15" y2="1.03" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="1.03" width="0.1524" layer="51"/>
-<wire x1="2.15" y1="-1.03" x2="2.15" y2="1.03" width="0.1524" layer="51"/>
+<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="1.03" width="0.1524" layer="21"/>
+<wire x1="2.15" y1="-1.03" x2="2.15" y2="1.03" width="0.1524" layer="21"/>
 <rectangle x1="-1.65" y1="0.95" x2="-1.15" y2="1.3" layer="21"/>
 <rectangle x1="-1.65" y1="-1.3" x2="-1.15" y2="-0.95" layer="21"/>
-<rectangle x1="-1.65" y1="-0.95" x2="-1.15" y2="0.95" layer="51"/>
-<rectangle x1="-2.6" y1="-0.72" x2="-2.15" y2="0.72" layer="51"/>
-<rectangle x1="2.15" y1="-0.72" x2="2.6" y2="0.72" layer="51"/>
+<rectangle x1="-1.65" y1="-0.95" x2="-1.15" y2="0.95" layer="21"/>
+<rectangle x1="-2.6" y1="-0.72" x2="-2.15" y2="0.72" layer="21"/>
+<rectangle x1="2.15" y1="-0.72" x2="2.6" y2="0.72" layer="21"/>
 <text x="-2.1" y="1.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
