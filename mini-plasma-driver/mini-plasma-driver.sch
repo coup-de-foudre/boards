@@ -17977,10 +17977,10 @@ Production Part - 8199
 <part name="GND2" library="microbuilder" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="39k"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="?"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10k"/>
-<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="?"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10k"/>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="IRF620" device="" package3d_urn="urn:adsk.eagle:package:28520/1" value="IRF640"/>
@@ -18016,7 +18016,7 @@ Production Part - 8199
 <part name="D5" library="adafruit" deviceset="1N4004" device=""/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="2.8k 1W"/>
 <part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="SMB" value="1SMB5953B-13"/>
-<part name="RPI_IN1" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1" value="120IN"/>
+<part name="VAC_120" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1" value="120IN"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2.5-5" package3d_urn="urn:adsk.eagle:package:23344/1" value="1u"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="?"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="?"/>
@@ -18034,10 +18034,10 @@ Production Part - 8199
 <part name="GND9" library="microbuilder" deviceset="GND" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="39k"/>
 <part name="D7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
-<part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="?"/>
+<part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10"/>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10k"/>
-<part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="?"/>
+<part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="1N4148"/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10"/>
 <part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10k"/>
 <part name="Q5" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="IRF620" device="" package3d_urn="urn:adsk.eagle:package:28520/1" value="IRF640"/>
@@ -18126,8 +18126,8 @@ Production Part - 8199
 <attribute name="NAME" x="-61.4426" y="121.92" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-63.5" y="119.1514" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RPI_IN1" gate="-1" x="-88.9" y="137.16"/>
-<instance part="RPI_IN1" gate="-2" x="-88.9" y="132.08"/>
+<instance part="VAC_120" gate="-1" x="-88.9" y="137.16"/>
+<instance part="VAC_120" gate="-2" x="-88.9" y="132.08"/>
 <instance part="C9" gate="G$1" x="-50.8" y="119.38"/>
 <instance part="R13" gate="G$1" x="-5.08" y="127" rot="R270"/>
 <instance part="R14" gate="G$1" x="-5.08" y="114.3" rot="R270"/>
@@ -18327,7 +18327,7 @@ Production Part - 8199
 <wire x1="-60.96" y1="116.84" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="EP"/>
 <wire x1="-25.4" y1="109.22" x2="-25.4" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="RPI_IN1" gate="-2" pin="KL"/>
+<pinref part="VAC_120" gate="-2" pin="KL"/>
 <wire x1="-83.82" y1="114.3" x2="-83.82" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="106.68" x2="-30.48" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="106.68" x2="-50.8" y2="106.68" width="0.1524" layer="91"/>
@@ -18673,7 +18673,7 @@ Production Part - 8199
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="RPI_IN1" gate="-1" pin="KL"/>
+<pinref part="VAC_120" gate="-1" pin="KL"/>
 <pinref part="D5" gate="1" pin="A"/>
 <wire x1="-83.82" y1="137.16" x2="-78.74" y2="137.16" width="0.1524" layer="91"/>
 </segment>
