@@ -20308,6 +20308,8 @@ Source: www.kingbright.com</description>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="U$4" library="microbuilder" deviceset="VDD" device=""/>
 <part name="GND15" library="microbuilder" deviceset="GND" device=""/>
+<part name="TP8" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
+<part name="TP9" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 </parts>
 <sheets>
 <sheet>
@@ -20435,6 +20437,8 @@ Source: www.kingbright.com</description>
 <instance part="JP1" gate="A" x="-83.82" y="93.98"/>
 <instance part="U$4" gate="G$1" x="-71.12" y="91.44" rot="R270"/>
 <instance part="GND15" gate="G$1" x="-71.12" y="86.36" rot="R90"/>
+<instance part="TP8" gate="G$1" x="-58.42" y="2.54" rot="R270"/>
+<instance part="TP9" gate="G$1" x="-58.42" y="17.78" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -20937,13 +20941,16 @@ Source: www.kingbright.com</description>
 <wire x1="-58.42" y1="25.4" x2="-58.42" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A"/>
 <junction x="-58.42" y="25.4"/>
+<pinref part="TP9" gate="G$1" pin="P$1"/>
+<junction x="-58.42" y="17.78"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="E"/>
-<wire x1="-58.42" y1="-12.7" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-12.7" x2="-58.42" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="THR"/>
+<wire x1="-58.42" y1="2.54" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="5.08" x2="-40.64" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="5.08" x2="-40.64" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-12.7" x2="-10.16" y2="-12.7" width="0.1524" layer="91"/>
@@ -20955,6 +20962,12 @@ Source: www.kingbright.com</description>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="-15.24" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-58.42" y="-12.7"/>
+<pinref part="U$2" gate="G$1" pin="S"/>
+<wire x1="-53.34" y1="12.7" x2="-53.34" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-58.42" y="7.62"/>
+<pinref part="TP8" gate="G$1" pin="P$1"/>
+<junction x="-58.42" y="2.54"/>
 </segment>
 </net>
 <net name="OUT555" class="0">
