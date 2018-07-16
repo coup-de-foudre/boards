@@ -20247,7 +20247,7 @@ Source: www.kingbright.com</description>
 <part name="12V6" library="microbuilder" deviceset="12V" device=""/>
 <part name="IC4" library="keves-ng" deviceset="NCP781" device="IC"/>
 <part name="D5" library="adafruit" deviceset="1N4004" device=""/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="2.8k 1W"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="41k 2W"/>
 <part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="SMB" value="1SMB5953B-13"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="?"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="?"/>
@@ -20310,6 +20310,7 @@ Source: www.kingbright.com</description>
 <part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="1uF"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="1uF"/>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="41k 2W"/>
 </parts>
 <sheets>
 <sheet>
@@ -20439,6 +20440,7 @@ Source: www.kingbright.com</description>
 <instance part="TP2" gate="G$1" x="0" y="40.64" rot="R180"/>
 <instance part="C9" gate="G$1" x="-50.8" y="119.38"/>
 <instance part="C10" gate="G$1" x="5.08" y="121.92"/>
+<instance part="R27" gate="G$1" x="-50.8" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -20997,6 +20999,9 @@ Source: www.kingbright.com</description>
 <pinref part="D5" gate="1" pin="C"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="137.16" x2="-60.96" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="137.16" x2="-50.8" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-60.96" y="137.16"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -21017,6 +21022,7 @@ Source: www.kingbright.com</description>
 <pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="-60.96" y1="124.46" x2="-60.96" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$22" class="0">
