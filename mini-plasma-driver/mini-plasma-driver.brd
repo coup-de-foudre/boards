@@ -2740,11 +2740,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="unknown" x="13.97" y="5.08" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="13.97" y="5.08" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="OUT" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" package="AK500/2" package3d_urn="urn:adsk.eagle:package:9880/1" value="" x="63.5" y="76.2">
-<attribute name="MF" value="" x="63.5" y="76.2" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="63.5" y="76.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="63.5" y="76.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="63.5" y="76.2" size="1.778" layer="27" display="off"/>
+<element name="OUT" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" package="AK500/2" package3d_urn="urn:adsk.eagle:package:9880/1" value="" x="63.5" y="76.2" rot="R180">
+<attribute name="MF" value="" x="63.5" y="76.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="63.5" y="76.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="63.5" y="76.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="63.5" y="76.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q3" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" package="TO18" package3d_urn="urn:adsk.eagle:package:28973/2" value="2N2369" x="77.47" y="8.89"/>
 <element name="Q4" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" package="TO18" package3d_urn="urn:adsk.eagle:package:28973/2" value="2N2369" x="59.69" y="16.51"/>
@@ -2832,8 +2832,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="9753451" x="11.43" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="29M3118" x="11.43" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="TP1" library="microbuilder" package="1X01_ROUND" value="" x="55.88" y="77.47">
-<attribute name="BOM" value="EXCLUDE" x="55.88" y="77.47" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="microbuilder" package="1X01_ROUND" value="" x="71.12" y="76.2">
+<attribute name="BOM" value="EXCLUDE" x="71.12" y="76.2" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP11" library="microbuilder" package="1X01_ROUND" value="" x="7.62" y="77.47">
 <attribute name="BOM" value="EXCLUDE" x="7.62" y="77.47" size="1.778" layer="27" display="off"/>
@@ -2841,8 +2841,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TP2" library="microbuilder" package="1X01_ROUND" value="" x="76.2" y="3.81">
 <attribute name="BOM" value="EXCLUDE" x="76.2" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP3" library="microbuilder" package="1X01_ROUND" value="" x="71.12" y="77.47">
-<attribute name="BOM" value="EXCLUDE" x="71.12" y="77.47" size="1.778" layer="27" display="off"/>
+<element name="TP3" library="microbuilder" package="1X01_ROUND" value="" x="55.88" y="76.2">
+<attribute name="BOM" value="EXCLUDE" x="55.88" y="76.2" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP4" library="microbuilder" package="1X01_ROUND" value="" x="50.8" y="77.47">
 <attribute name="BOM" value="EXCLUDE" x="50.8" y="77.47" size="1.778" layer="27" display="off"/>
@@ -3046,8 +3046,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="87.63" y1="49.53" x2="83.82" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="80.01" y1="45.72" x2="83.82" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="76.2" y1="69.85" x2="82.55" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="60.9854" y1="76.2" x2="76.2" y2="69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="55.88" y1="77.47" x2="60.9854" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="66.0146" y1="76.2" x2="76.2" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="76.2" x2="66.0146" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="COM">
 <contactref element="R4" pad="1"/>
@@ -3249,8 +3249,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="OUT" pad="2"/>
 <contactref element="Q8" pad="S"/>
 <contactref element="Q9" pad="D"/>
-<wire x1="66.0146" y1="76.2" x2="71.12" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="64.77" x2="66.0146" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="60.9854" y1="76.2" x2="55.88" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="64.77" x2="60.9854" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="56.3" y1="60.96" x2="57.15" y2="64.77" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="57.15" x2="56.3" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8" y1="69.85" x2="57.15" y2="64.77" width="0" layer="19" extent="1-1"/>
