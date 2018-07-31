@@ -2865,7 +2865,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R14" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="C12" pad="1"/>
-<polygon width="0.762" layer="16">
+<polygon width="0.254" layer="16" isolate="0.3048">
 <vertex x="98.552" y="1.524"/>
 <vertex x="35.052" y="1.524"/>
 <vertex x="35.052" y="25.146"/>
@@ -3425,10 +3425,10 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="22.594971875" y="66.294"/>
 <vertex x="87.376" y="66.294"/>
 <vertex x="87.376" y="69.596"/>
-<vertex x="87.376" y="70.358"/>
-<vertex x="94.742" y="70.358"/>
-<vertex x="94.742" y="66.04"/>
-<vertex x="91.948" y="66.04"/>
+<vertex x="87.376" y="71.882"/>
+<vertex x="97.282" y="71.882"/>
+<vertex x="97.282" y="64.77"/>
+<vertex x="91.948" y="64.77"/>
 <vertex x="91.948" y="57.151896875"/>
 <vertex x="22.621971875" y="57.149971875"/>
 <vertex x="22.340221875" y="56.868221875"/>
