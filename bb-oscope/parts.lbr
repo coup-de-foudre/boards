@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.4.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SSOP24" urn="urn:adsk.eagle:footprint:20090/1">
+<description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;&lt;p&gt;
+SOT340-1 / JEDEC MO-150AG</description>
+<wire x1="-4.128" y1="-2.536" x2="4.128" y2="-2.536" width="0.1524" layer="21"/>
+<wire x1="4.128" y1="-2.536" x2="4.128" y2="2.536" width="0.1524" layer="21"/>
+<wire x1="4.128" y1="2.536" x2="-4.128" y2="2.536" width="0.1524" layer="21"/>
+<wire x1="-4.128" y1="-2.536" x2="-4.128" y2="2.536" width="0.1524" layer="21"/>
+<wire x1="-3.874" y1="-2.286" x2="3.874" y2="-2.286" width="0.0508" layer="21"/>
+<wire x1="3.874" y1="2.286" x2="3.874" y2="-2.286" width="0.0508" layer="21"/>
+<wire x1="3.874" y1="2.286" x2="-3.874" y2="2.286" width="0.0508" layer="21"/>
+<wire x1="-3.874" y1="-2.286" x2="-3.874" y2="2.286" width="0.0508" layer="21"/>
+<circle x="-2.8829" y="-1.397" radius="0.635" width="0.1524" layer="21"/>
+<smd name="1" x="-3.575" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="2" x="-2.925" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="3" x="-2.275" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="4" x="-1.625" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="5" x="-0.975" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="6" x="-0.325" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="7" x="0.325" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="8" x="0.975" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="9" x="1.625" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="10" x="2.275" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="11" x="2.925" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="12" x="3.575" y="-3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="13" x="3.575" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="14" x="2.925" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="15" x="2.275" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="16" x="1.625" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="17" x="0.975" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="18" x="0.325" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="19" x="-0.325" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="20" x="-0.975" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="21" x="-1.625" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="22" x="-2.275" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="23" x="-2.925" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<smd name="24" x="-3.575" y="3.42" dx="0.4" dy="1.2" layer="1"/>
+<text x="-4.4704" y="-2.5273" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.1369" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.725" y1="-3.8" x2="-3.425" y2="-2.6" layer="51"/>
+<rectangle x1="-3.075" y1="-3.8" x2="-2.775" y2="-2.6" layer="51"/>
+<rectangle x1="-2.425" y1="-3.8" x2="-2.125" y2="-2.6" layer="51"/>
+<rectangle x1="-1.775" y1="-3.8" x2="-1.475" y2="-2.6" layer="51"/>
+<rectangle x1="-1.125" y1="-3.8" x2="-0.825" y2="-2.6" layer="51"/>
+<rectangle x1="-0.475" y1="-3.8" x2="-0.175" y2="-2.6" layer="51"/>
+<rectangle x1="0.175" y1="-3.8" x2="0.475" y2="-2.6" layer="51"/>
+<rectangle x1="0.825" y1="-3.8" x2="1.125" y2="-2.6" layer="51"/>
+<rectangle x1="1.475" y1="-3.8" x2="1.775" y2="-2.6" layer="51"/>
+<rectangle x1="2.125" y1="-3.8" x2="2.425" y2="-2.6" layer="51"/>
+<rectangle x1="2.775" y1="-3.8" x2="3.075" y2="-2.6" layer="51"/>
+<rectangle x1="3.425" y1="-3.8" x2="3.725" y2="-2.6" layer="51"/>
+<rectangle x1="3.425" y1="2.6" x2="3.725" y2="3.8" layer="51"/>
+<rectangle x1="2.775" y1="2.6" x2="3.075" y2="3.8" layer="51"/>
+<rectangle x1="2.125" y1="2.6" x2="2.425" y2="3.8" layer="51"/>
+<rectangle x1="1.475" y1="2.6" x2="1.775" y2="3.8" layer="51"/>
+<rectangle x1="0.825" y1="2.6" x2="1.125" y2="3.8" layer="51"/>
+<rectangle x1="0.175" y1="2.6" x2="0.475" y2="3.8" layer="51"/>
+<rectangle x1="-0.475" y1="2.6" x2="-0.175" y2="3.8" layer="51"/>
+<rectangle x1="-1.125" y1="2.6" x2="-0.825" y2="3.8" layer="51"/>
+<rectangle x1="-1.775" y1="2.6" x2="-1.475" y2="3.8" layer="51"/>
+<rectangle x1="-2.425" y1="2.6" x2="-2.125" y2="3.8" layer="51"/>
+<rectangle x1="-3.075" y1="2.6" x2="-2.775" y2="3.8" layer="51"/>
+<rectangle x1="-3.725" y1="2.6" x2="-3.425" y2="3.8" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SSOP24" urn="urn:adsk.eagle:package:20186/3" type="model">
+<description>Small Shrink Outline Package
+SOT340-1 / JEDEC MO-150AG</description>
+<packageinstances>
+<packageinstance name="SSOP24"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="LTC1406">
+<pin name="O_GND" x="-25.4" y="20.32" length="middle"/>
+<pin name="O_VDD" x="-25.4" y="15.24" length="middle"/>
+<pin name="-SHDN" x="-25.4" y="10.16" length="middle"/>
+<pin name="V_BIAS" x="-25.4" y="5.08" length="middle"/>
+<pin name="V_REF" x="-25.4" y="0" length="middle"/>
+<pin name="A_GND1" x="-25.4" y="-5.08" length="middle"/>
+<pin name="A_IN+" x="-25.4" y="-10.16" length="middle"/>
+<pin name="A_IN-" x="-25.4" y="-15.24" length="middle"/>
+<pin name="A_VDD" x="-25.4" y="-20.32" length="middle"/>
+<pin name="A_GND2" x="-25.4" y="-25.4" length="middle"/>
+<pin name="D_GND" x="-25.4" y="-30.48" length="middle"/>
+<pin name="D_VDD" x="-25.4" y="-35.56" length="middle"/>
+<pin name="CLK" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="OF/UF" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="D7" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="D6" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="D5" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="D4" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="D3" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="D2" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="D1" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="D0" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="NC1" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="NC2" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<wire x1="-20.32" y1="27.94" x2="-20.32" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-43.18" x2="20.32" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-43.18" x2="20.32" y2="27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="27.94" x2="-20.32" y2="27.94" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LTC1406">
+<description>The LTC ®1406 is a 20Msps, 8-bit, sampling A/D converter
+which draws only 150mW from a single 5V supply. This
+easy-to-use device includes a high dynamic range sampleand-hold with a 250MHz bandwidth.
+The LTC1406’s full-scale input range is ±1V. The inputs
+can be driven differentially or one input can be tied to a
+fixed voltage and the other input driven with a ±1V bipolar
+input. Maximum DC specifications include ±1LSB DNL
+and INL over temperature. Outstanding AC performance
+includes 48.5dB S/(N + D) and 62dB THD with a 1MHz
+input; 47.5dB S/(N + D) and 59dB THD at the Nyquist input
+frequency of 10MHz.
+The unique differential input sample-and-hold can acquire
+single-ended or differential input signals up to its 250MHz
+bandwidth. The 60dB common mode rejection allows
+users to eliminate ground loops and common mode noise
+by measuring signals differentially from the source.
+The ADC has an 8-bit parallel output port with separate
+power supply and ground allowing easy interface to 3V
+digital systems. The pipelined architecture has five clock
+cycles of data latency.</description>
+<gates>
+</gates>
+<devices>
+<device name="" package="SSOP24">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20186/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
