@@ -11758,6 +11758,7 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11999,6 +12000,9 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="GND6" gate="1" x="-68.58" y="104.14" smashed="yes">
 <attribute name="VALUE" x="-71.12" y="101.6" size="1.778" layer="96"/>
 </instance>
+<instance part="+3V2" gate="G$1" x="-27.94" y="76.2" smashed="yes">
+<attribute name="VALUE" x="-25.4" y="78.74" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12186,6 +12190,17 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <wire x1="162.56" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="170.18" y1="88.9" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-22.86" y1="66.04" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="68.58" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<wire x1="-27.94" y1="73.66" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-27.94" y="68.58"/>
 </segment>
 </net>
 <net name="EMERGENCY" class="0">
@@ -12417,20 +12432,6 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <wire x1="104.14" y1="144.78" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
-<segment>
-<wire x1="-22.86" y1="66.04" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="68.58" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="68.58" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="73.66" x2="-30.48" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-27.94" y="68.58"/>
-<label x="-30.48" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="ENC_Z" class="0">
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="16/A2/T"/>
@@ -12526,7 +12527,6 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <approved hash="113,1,85.265,122.83,BATT,,,,,"/>
 <approved hash="113,1,167.679,150.77,ESTOP,,,,,"/>
 <approved hash="113,1,103.914,153.397,POWER,,,,,"/>
-<approved hash="115,1,45.72,45.72,ENC_A,,,,,"/>
 </errors>
 </schematic>
 </drawing>
