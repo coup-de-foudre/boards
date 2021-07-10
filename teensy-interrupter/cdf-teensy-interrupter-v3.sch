@@ -11759,6 +11759,7 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12003,6 +12004,9 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="+3V2" gate="G$1" x="-27.94" y="76.2" smashed="yes">
 <attribute name="VALUE" x="-25.4" y="78.74" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GND7" gate="1" x="180.34" y="109.22" smashed="yes">
+<attribute name="VALUE" x="177.8" y="106.68" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12123,6 +12127,12 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <wire x1="-68.58" y1="114.3" x2="-68.58" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-68.58" y="114.3"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="-"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="177.8" y1="116.84" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="116.84" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
