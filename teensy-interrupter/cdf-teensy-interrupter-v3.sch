@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -105,15 +108,25 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -10893,342 +10906,6 @@ Diode with low voltage drop</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
-<description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
-In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="ENCODER_LED_2" urn="urn:adsk.eagle:footprint:40082/1" library_version="1">
-<description>&lt;h3&gt;Illuminated Rotary Encoder w/ 2 LEDs&lt;/h3&gt;
-&lt;p&gt;Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.&lt;/p&gt;
-&lt;p&gt;This encoder has a red/green LED built-in, which shines through the encoder shaft.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/EC12PLRVF-D-24K-24-24C-0206-6H%28SPEC%29.pdf"&gt;Datasheet&lt;/a&gt; (EC12PLGRSDVF-D-25K-24-32/07-6H)&lt;/p&gt;</description>
-<wire x1="-3.9" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="51"/>
-<wire x1="-6.2" y1="1.7" x2="-6.2" y2="5.8938" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="5.8938" x2="-5.3938" y2="6.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-5.3938" y1="6.7" x2="-3.9" y2="6.7" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="51"/>
-<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="1.7" width="0.2032" layer="51"/>
-<wire x1="6.2" y1="1.7" x2="6.2" y2="-1.7" width="0.2032" layer="51"/>
-<wire x1="6.2" y1="5.8938" x2="5.3938" y2="6.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="5.3938" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="1.7" x2="6.2" y2="5.8938" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="-1.7" x2="6.2" y2="-5.8938" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="-5.8938" x2="5.3938" y2="-6.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="5.3938" y1="-6.7" x2="3.4" y2="-6.7" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="-5.8938" x2="-5.3938" y2="-6.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-5.3938" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="-5.8938" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3" width="0.2032" layer="21"/>
-<pad name="A" x="-2.5" y="-7.5" drill="1.1" diameter="1.8"/>
-<pad name="C" x="0" y="-7.5" drill="1.1" diameter="1.8"/>
-<pad name="B" x="2.5" y="-7.5" drill="1.1" diameter="1.8"/>
-<pad name="+G" x="1" y="7" drill="1.1" diameter="1.778"/>
-<pad name="+R" x="-1" y="7" drill="1.1" diameter="1.778"/>
-<pad name="P$1" x="-5.55" y="0" drill="2.1"/>
-<pad name="P$2" x="5.55" y="0" drill="2.1"/>
-<pad name="GND" x="3" y="7" drill="1.1" diameter="1.778"/>
-<pad name="SW" x="-3" y="7" drill="1.1" diameter="1.778"/>
-<text x="-6.35" y="3.81" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
-<text x="6.35" y="3.81" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
-</package>
-<package name="ENCODER_LED_2_KIT" urn="urn:adsk.eagle:footprint:40083/1" library_version="1">
-<description>&lt;h3&gt;Illuminated Rotary Encoder w/ 2 LEDs - KIT Package&lt;/h3&gt;
-&lt;p&gt;Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.&lt;/p&gt;
-&lt;p&gt;This encoder has a red/green LED built-in, which shines through the encoder shaft.&lt;/p&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/EC12PLRVF-D-24K-24-24C-0206-6H%28SPEC%29.pdf"&gt;Datasheet&lt;/a&gt; (EC12PLGRSDVF-D-25K-24-32/07-6H)&lt;/p&gt;</description>
-<wire x1="-3.9" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="51"/>
-<wire x1="-6.2" y1="1.7" x2="-6.2" y2="5.8938" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="5.8938" x2="-5.3938" y2="6.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-5.3938" y1="6.7" x2="-3.9" y2="6.7" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="51"/>
-<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="1.7" width="0.2032" layer="51"/>
-<wire x1="6.2" y1="1.7" x2="6.2" y2="-1.7" width="0.2032" layer="51"/>
-<wire x1="6.2" y1="5.8938" x2="5.3938" y2="6.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="5.3938" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="1.7" x2="6.2" y2="5.8938" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="-1.7" x2="6.2" y2="-5.8938" width="0.2032" layer="21"/>
-<wire x1="6.2" y1="-5.8938" x2="5.3938" y2="-6.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="5.3938" y1="-6.7" x2="3.4" y2="-6.7" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="-5.8938" x2="-5.3938" y2="-6.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-5.3938" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="21"/>
-<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="-5.8938" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3" width="0.2032" layer="21"/>
-<pad name="A" x="-2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
-<pad name="C" x="0" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
-<pad name="B" x="2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
-<pad name="+G" x="1" y="7" drill="1.1" diameter="1.778" stop="no"/>
-<pad name="+R" x="-1" y="7" drill="1.1" diameter="1.778" stop="no"/>
-<pad name="P$1" x="-5.55" y="0" drill="2.1" stop="no"/>
-<pad name="P$2" x="5.55" y="0" drill="2.1" stop="no"/>
-<pad name="GND" x="3" y="7" drill="1.1" diameter="1.778" stop="no"/>
-<pad name="SW" x="-3" y="7" drill="1.1" diameter="1.778" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.55" y="-7.5" curve="90"/>
-<vertex x="-2.5" y="-6.55" curve="90"/>
-<vertex x="-3.45" y="-7.5" curve="90"/>
-<vertex x="-2.5" y="-8.45" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="0.95" y="-7.5" curve="90"/>
-<vertex x="0" y="-6.55" curve="90"/>
-<vertex x="-0.95" y="-7.5" curve="90"/>
-<vertex x="0" y="-8.45" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="3.45" y="-7.5" curve="90"/>
-<vertex x="2.5" y="-6.55" curve="90"/>
-<vertex x="1.55" y="-7.5" curve="90"/>
-<vertex x="2.5" y="-8.45" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="-2.05" y="7" curve="90"/>
-<vertex x="-3" y="7.95" curve="90"/>
-<vertex x="-3.95" y="7" curve="90"/>
-<vertex x="-3" y="6.05" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="-0.05" y="7" curve="90"/>
-<vertex x="-1" y="7.95" curve="90"/>
-<vertex x="-1.95" y="7" curve="90"/>
-<vertex x="-1" y="6.05" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.95" y="7" curve="90"/>
-<vertex x="1" y="7.95" curve="90"/>
-<vertex x="0.05" y="7" curve="90"/>
-<vertex x="1" y="6.05" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="3.95" y="7" curve="90"/>
-<vertex x="3" y="7.95" curve="90"/>
-<vertex x="2.05" y="7" curve="90"/>
-<vertex x="3" y="6.05" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="4" y="0" curve="-90"/>
-<vertex x="5.55" y="1.55" curve="-90"/>
-<vertex x="7.1" y="0" curve="-90"/>
-<vertex x="5.55" y="-1.55" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="-7.1" y="0" curve="-90"/>
-<vertex x="-5.55" y="1.55" curve="-90"/>
-<vertex x="-4" y="0" curve="-90"/>
-<vertex x="-5.55" y="-1.55" curve="-90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-5.55" y="1" curve="90"/>
-<vertex x="-6.55" y="0" curve="90"/>
-<vertex x="-5.55" y="-1" curve="90"/>
-<vertex x="-4.55" y="0" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="5.55" y="1" curve="90"/>
-<vertex x="4.55" y="0" curve="90"/>
-<vertex x="5.55" y="-1" curve="90"/>
-<vertex x="6.55" y="0" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-3" y="7.55" curve="90"/>
-<vertex x="-3.55" y="7"/>
-<vertex x="-3.55" y="6.95" curve="90"/>
-<vertex x="-3.05" y="6.45"/>
-<vertex x="-3" y="6.45" curve="90"/>
-<vertex x="-2.45" y="7" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="7.55" curve="90"/>
-<vertex x="-1.55" y="7"/>
-<vertex x="-1.55" y="6.95" curve="90"/>
-<vertex x="-1.05" y="6.45"/>
-<vertex x="-1" y="6.45" curve="90"/>
-<vertex x="-0.45" y="7" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1" y="7.55" curve="90"/>
-<vertex x="0.45" y="7"/>
-<vertex x="0.45" y="6.95" curve="90"/>
-<vertex x="0.95" y="6.45"/>
-<vertex x="1" y="6.45" curve="90"/>
-<vertex x="1.55" y="7" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="3" y="7.55" curve="90"/>
-<vertex x="2.45" y="7"/>
-<vertex x="2.45" y="6.95" curve="90"/>
-<vertex x="2.95" y="6.45"/>
-<vertex x="3" y="6.45" curve="90"/>
-<vertex x="3.55" y="7" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-2.5" y="-6.95" curve="90"/>
-<vertex x="-3.05" y="-7.5"/>
-<vertex x="-3.05" y="-7.55" curve="90"/>
-<vertex x="-2.55" y="-8.05"/>
-<vertex x="-2.5" y="-8.05" curve="90"/>
-<vertex x="-1.95" y="-7.5" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="0" y="-6.95" curve="90"/>
-<vertex x="-0.55" y="-7.5"/>
-<vertex x="-0.55" y="-7.55" curve="90"/>
-<vertex x="-0.05" y="-8.05"/>
-<vertex x="0" y="-8.05" curve="90"/>
-<vertex x="0.55" y="-7.5" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="2.55" y="-6.95" curve="90"/>
-<vertex x="2" y="-7.5"/>
-<vertex x="2" y="-7.55" curve="90"/>
-<vertex x="2.5" y="-8.05"/>
-<vertex x="2.55" y="-8.05" curve="90"/>
-<vertex x="3.1" y="-7.5" curve="90"/>
-</polygon>
-<text x="-6.35" y="3.81" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
-<text x="6.35" y="3.81" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="ENCODER_LED_2" urn="urn:adsk.eagle:package:40146/1" type="box" library_version="1">
-<description>Illuminated Rotary Encoder w/ 2 LEDs
-Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.
-This encoder has a red/green LED built-in, which shines through the encoder shaft.
-Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
-<packageinstances>
-<packageinstance name="ENCODER_LED_2"/>
-</packageinstances>
-</package3d>
-<package3d name="ENCODER_LED_2_KIT" urn="urn:adsk.eagle:package:40151/1" type="box" library_version="1">
-<description>Illuminated Rotary Encoder w/ 2 LEDs - KIT Package
-Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.
-This encoder has a red/green LED built-in, which shines through the encoder shaft.
-Warning: This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.
-Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
-<packageinstances>
-<packageinstance name="ENCODER_LED_2_KIT"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="ENCODER_LED_2-1" urn="urn:adsk.eagle:symbol:40081/1" library_version="1">
-<description>&lt;h3&gt;Illuminated Rotary Encoder w/ 2 LEDs&lt;/h3&gt;
-&lt;p&gt;Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.&lt;/p&gt;</description>
-<wire x1="8.89" y1="1.27" x2="7.62" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-1.27" x2="6.35" y2="1.27" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-1.27" x2="7.62" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-1.27" x2="6.35" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="8.89" y1="1.27" x2="7.62" y2="1.27" width="0.254" layer="94"/>
-<wire x1="7.62" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="1.27" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
-<circle x="-2.54" y="2.54" radius="0.127" width="0.4064" layer="94"/>
-<circle x="-2.54" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
-<text x="-10.16" y="12.954" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-10.16" y="-10.541" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="-" x="12.7" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="+R" x="12.7" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-12.7" y="5.08" visible="pad" length="short"/>
-<pin name="C" x="-12.7" y="0" visible="pad" length="short"/>
-<pin name="B" x="-12.7" y="-5.08" visible="pad" length="short"/>
-<pin name="+G" x="12.7" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="SW" x="12.7" y="10.16" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ENCODER-2LED" urn="urn:adsk.eagle:component:40202/1" prefix="S" library_version="1">
-<description>&lt;h3&gt;Illuminated Rotary Encoder w/ 2 LEDs&lt;/h3&gt;
-&lt;p&gt;Rotary encoders rotate similarly to potentiometers, but they’re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned.&lt;/p&gt;
-&lt;p&gt;This encoder has a red/green LED built-in, which shines through the encoder shaft.&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10596"&gt;Rotary Encoder - Illuminated (Red/Green)&lt;/a&gt; (COM-10596)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11722"&gt;SparkFun Rotary Encoder Breakout - Illuminated (RG/RGB)&lt;/a&gt; (BOB-11722)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="ENCODER_LED_2-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ENCODER_LED_2">
-<connects>
-<connect gate="G$1" pin="+G" pad="+G"/>
-<connect gate="G$1" pin="+R" pad="+R"/>
-<connect gate="G$1" pin="-" pad="GND"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="SW"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40146/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-11113"/>
-<attribute name="SF_SKU" value="COM-10596"/>
-</technology>
-</technologies>
-</device>
-<device name="KIT" package="ENCODER_LED_2_KIT">
-<connects>
-<connect gate="G$1" pin="+G" pad="+G"/>
-<connect gate="G$1" pin="+R" pad="+R"/>
-<connect gate="G$1" pin="-" pad="GND"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="SW"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40151/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-11113"/>
-<attribute name="SF_SKU" value="COM-10596"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -11685,6 +11362,94 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="OPL_Connector" urn="urn:adsk.eagle:library:8004395">
+<description>&lt;b&gt;Seeed Open Parts Library (OPL) for the Seeed Fusion PCB Assembly Service&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+This library is designed for use with parts that are stocked by Seeed and can be used directly with Seeed's turnkey PCB assembly service. By using only parts in the OPLs, the PCBA production time can be drastically reduced.
+
+&lt;br&gt;&lt;br&gt;
+We continuously work to make sure these libaries are accurate and up to date. Make sure you update to the latest version via the Library Manager. We will not take responsibility for the use of out-of-date libraries.
+
+&lt;br&gt;&lt;br&gt;
+If you discover any discreprancies or would like to contribute, please &lt;b&gt;&lt;a href="mailto:fusion@seeed.cc?Subject=Regarding the Seeed OPL..." target="_top"&gt;get in touch&lt;/a&gt;&lt;/b&gt; or fork the &lt;b&gt;&lt;a href="https://github.com/Seeed-Studio/OPL_Eagle_Library" title="Seeed OPL Eagle GitHub Repository"&gt;GitHub&lt;/a&gt;&lt;/b&gt; repository. 
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;a href="https://www.seeedstudio.com/opl.html" title="https://www.seeedstudio.com/opl.html"&gt;Seeed Fusion PCBA OPL&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com/prototype-pcb-assembly.html" title="Seeed Fusion PCB Assembly Service"&gt;Seeed Fusion PCB Assembly Service&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com/fusion_pcb.html"&gt;Order PCB/PCBA Now&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.seeedstudio.com"&gt;www.seeedstudio.com&lt;/a&gt;</description>
+<packages>
+<package name="H4-2.54" urn="urn:adsk.eagle:footprint:8004482/1" library_version="11">
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0" layer="39"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-5.08" width="0" layer="39"/>
+<wire x1="1.27" y1="-5.08" x2="-1.27" y2="-5.08" width="0" layer="39"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="5.08" width="0" layer="39"/>
+<pad name="1" x="0" y="3.81" drill="0.889" diameter="1.651" shape="square"/>
+<pad name="2" x="0" y="1.27" drill="0.889" diameter="1.651"/>
+<pad name="3" x="0" y="-1.27" drill="0.889" diameter="1.651"/>
+<pad name="4" x="0" y="-3.81" drill="0.889" diameter="1.651"/>
+<text x="-1.905" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
+<text x="2.54" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
+<rectangle x1="-1.27" y1="-5.08" x2="1.27" y2="5.08" layer="39"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="H4-2.54" urn="urn:adsk.eagle:package:8004499/1" type="box" library_version="11">
+<packageinstances>
+<packageinstance name="H4-2.54"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="HEADER-4P" urn="urn:adsk.eagle:symbol:8004405/2" library_version="11">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="-1.27" y="6.35" size="1.27" layer="96" ratio="10">&gt;value</text>
+<pin name="P$1" x="-7.62" y="3.81" visible="pad" length="middle" function="dotclk"/>
+<pin name="P$2" x="-7.62" y="1.27" visible="pad" length="middle"/>
+<pin name="P$3" x="-7.62" y="-1.27" visible="pad" length="middle"/>
+<pin name="P$4" x="-7.62" y="-3.81" visible="pad" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIP-BLACK-MALE-HEADER-VERT(4P-2.54)" urn="urn:adsk.eagle:component:8004652/2" prefix="J" uservalue="yes" library_version="11">
+<description>320020017</description>
+<gates>
+<gate name="G$1" symbol="HEADER-4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H4-2.54">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8004499/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="P125-1104A0BS116A1" constant="no"/>
+<attribute name="VALUE" value="4p-2.54" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11731,20 +11496,16 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.2K"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="VUSB" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:6240654/1"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="D1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-BAT20J" package3d_urn="urn:adsk.eagle:package:38441/1" value="1A/23V/620mV"/>
 <part name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-BAT20J" package3d_urn="urn:adsk.eagle:package:38441/1" value="1A/23V/620mV"/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="ENCODER-2LED" device="" package3d_urn="urn:adsk.eagle:package:40146/1"/>
-<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="50000"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100000"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="SCRN" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:6240710/1"/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11759,7 +11520,14 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="J2" library="OPL_Connector" library_urn="urn:adsk.eagle:library:8004395" deviceset="DIP-BLACK-MALE-HEADER-VERT(4P-2.54)" device="" package3d_urn="urn:adsk.eagle:package:8004499/1" value="4p-2.54"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="J3" library="OPL_Connector" library_urn="urn:adsk.eagle:library:8004395" deviceset="DIP-BLACK-MALE-HEADER-VERT(4P-2.54)" device="" package3d_urn="urn:adsk.eagle:package:8004499/1" value="4p-2.54"/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -11892,8 +11660,8 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="SUPPLY1" gate="1" x="96.52" y="83.82" smashed="yes">
 <attribute name="VALUE" x="92.71" y="80.01" size="1.778" layer="96"/>
 </instance>
-<instance part="GND17" gate="1" x="96.52" y="127" smashed="yes">
-<attribute name="VALUE" x="93.98" y="124.46" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="101.6" y="124.46" smashed="yes">
+<attribute name="VALUE" x="99.06" y="121.92" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="5.08" y="154.94" smashed="yes">
 <attribute name="NAME" x="6.604" y="155.321" size="1.778" layer="95"/>
@@ -11924,13 +11692,6 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="+3V8" gate="G$1" x="111.76" y="83.82" smashed="yes">
 <attribute name="VALUE" x="109.22" y="78.74" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="G$1" x="165.1" y="124.46" smashed="yes">
-<attribute name="NAME" x="154.94" y="137.414" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="154.94" y="113.919" size="1.778" layer="96" font="vector" align="top-left"/>
-</instance>
-<instance part="+3V9" gate="G$1" x="144.78" y="124.46" smashed="yes" rot="R90">
-<attribute name="VALUE" x="144.78" y="124.46" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="R12" gate="G$1" x="111.76" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="110.2614" y="29.21" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.062" y="31.75" size="1.778" layer="96" rot="R90"/>
@@ -11945,14 +11706,6 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="SUPPLY2" gate="1" x="111.76" y="43.18" smashed="yes">
 <attribute name="VALUE" x="107.95" y="39.37" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="185.42" y="129.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="128.0414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="189.23" y="132.842" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R15" gate="G$1" x="193.04" y="132.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="196.85" y="130.5814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="196.85" y="135.382" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SCRN" gate="A" x="160.02" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="166.37" y="80.645" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="166.37" y="93.98" size="1.778" layer="96" rot="R180"/>
@@ -11963,9 +11716,9 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="GND8" gate="1" x="172.72" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="175.26" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BATT" gate="G$1" x="83.82" y="121.92" smashed="yes" rot="R270">
-<attribute name="NAME" x="82.55" y="117.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="78.74" y="128.27" size="1.778" layer="96" rot="R270"/>
+<instance part="BATT" gate="G$1" x="88.9" y="119.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.63" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.82" y="125.73" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="ESTOP" gate="G$1" x="165.1" y="149.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="163.83" y="145.415" size="1.778" layer="95"/>
@@ -12004,8 +11757,35 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <instance part="+3V2" gate="G$1" x="-27.94" y="76.2" smashed="yes">
 <attribute name="VALUE" x="-25.4" y="78.74" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND7" gate="1" x="180.34" y="109.22" smashed="yes">
-<attribute name="VALUE" x="177.8" y="106.68" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="86.36" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="85.979" y="136.144" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="91.059" y="136.144" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="J2" gate="G$1" x="162.56" y="130.81" smashed="yes">
+<attribute name="NAME" x="154.94" y="137.16" size="1.27" layer="95" ratio="10"/>
+<attribute name="VALUE" x="161.29" y="137.16" size="1.27" layer="96" ratio="10"/>
+</instance>
+<instance part="GND9" gate="1" x="146.05" y="120.65" smashed="yes">
+<attribute name="VALUE" x="143.51" y="118.11" size="1.778" layer="96"/>
+</instance>
+<instance part="R16" gate="G$1" x="146.05" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="149.86" y="128.0414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="149.86" y="132.842" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R17" gate="G$1" x="138.43" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="130.5814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="142.24" y="135.382" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="J3" gate="G$1" x="162.56" y="106.68" smashed="yes">
+<attribute name="NAME" x="154.94" y="113.03" size="1.27" layer="95" ratio="10"/>
+<attribute name="VALUE" x="161.29" y="113.03" size="1.27" layer="96" ratio="10"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="127" y="110.49" smashed="yes" rot="R90">
+<attribute name="VALUE" x="127" y="110.49" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R4" gate="G$1" x="139.7" y="110.49" smashed="yes">
+<attribute name="NAME" x="135.89" y="111.9886" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="107.188" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12095,9 +11875,14 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="86.36" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
 <pinref part="BATT" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="129.54" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="127" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="134.62" x2="96.52" y2="127" width="0.1524" layer="91"/>
+<junction x="96.52" y="127"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -12129,10 +11914,10 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="-"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="177.8" y1="116.84" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="116.84" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="127" x2="146.05" y2="127" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="146.05" y1="127" x2="146.05" y2="123.19" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12191,11 +11976,6 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<pinref part="S1" gate="G$1" pin="C"/>
-<wire x1="147.32" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SCRN" gate="A" pin="3"/>
 <wire x1="162.56" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
@@ -12211,6 +11991,11 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="-27.94" y1="73.66" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-27.94" y="68.58"/>
+</segment>
+<segment>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="129.54" y1="110.49" x2="134.62" y2="110.49" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="EMERGENCY" class="0">
@@ -12253,26 +12038,26 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 </net>
 <net name="ENC_A" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="A"/>
-<wire x1="152.4" y1="129.54" x2="144.78" y2="129.54" width="0.1524" layer="91"/>
-<label x="144.78" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TEENSY" gate="G$1" pin="13/SCK/LED"/>
 <wire x1="50.8" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 <label x="40.64" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="154.94" y1="107.95" x2="143.51" y2="107.95" width="0.1524" layer="91"/>
+<label x="144.78" y="107.95" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="ENC_B" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="B"/>
-<wire x1="152.4" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
-<label x="144.78" y="119.38" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="50.8" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="TEENSY" gate="G$1" pin="14/A1"/>
 <label x="40.64" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="154.94" y1="105.41" x2="144.78" y2="105.41" width="0.1524" layer="91"/>
+<label x="144.78" y="105.41" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -12344,6 +12129,7 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="POWER" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="152.4" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="144.78" x2="116.84" y2="144.78" width="0.1524" layer="91"/>
+<label x="114.3" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -12383,7 +12169,7 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <wire x1="66.04" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="V_USB" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="157.48" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
@@ -12419,7 +12205,9 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 </net>
 <net name="B+" class="0">
 <segment>
-<wire x1="83.82" y1="124.46" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="121.92" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="129.54" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="BAT"/>
 <wire x1="50.8" y1="142.24" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="134.62" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
@@ -12428,9 +12216,10 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="83.82" y1="142.24" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="BATT" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="SW" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -12440,6 +12229,7 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <pinref part="POWER" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="144.78" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
+<label x="99.06" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC_Z" class="0">
@@ -12449,9 +12239,9 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <label x="40.64" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="SW"/>
-<wire x1="177.8" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<label x="198.12" y="134.62" size="1.778" layer="95"/>
+<wire x1="154.94" y1="134.62" x2="146.05" y2="134.62" width="0.1524" layer="91"/>
+<label x="146.05" y="134.62" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="V_SENSE" class="0">
@@ -12468,55 +12258,62 @@ Datasheet (EC12PLGRSDVF-D-25K-24-32/07-6H)</description>
 <label x="40.64" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="+G"/>
-<wire x1="177.8" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="+R"/>
-<wire x1="177.8" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="IND_G" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
-<label x="198.12" y="132.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="50.8" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="TEENSY" gate="G$1" pin="17/A3/T"/>
 <label x="40.64" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="133.35" y1="132.08" x2="128.27" y2="132.08" width="0.1524" layer="91"/>
+<label x="128.27" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="IND_R" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
-<label x="198.12" y="129.54" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="50.8" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="TEENSY" gate="G$1" pin="18/A4/T/SDA0"/>
 <label x="40.64" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="140.97" y1="129.54" x2="128.27" y2="129.54" width="0.1524" layer="91"/>
+<label x="128.27" y="129.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCRN_TX" class="0">
-<segment>
-<pinref part="TEENSY" gate="G$1" pin="1/TX1/T"/>
-<wire x1="50.8" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<label x="40.64" y="76.2" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="SCRN" gate="A" pin="1"/>
 <wire x1="162.56" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="83.82" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <label x="170.18" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEENSY" gate="G$1" pin="10/TX2/PWM"/>
+<wire x1="50.8" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
+<label x="40.64" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="143.51" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P$2"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="151.13" y1="129.54" x2="154.94" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P$3"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="110.49" x2="154.94" y2="110.49" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
