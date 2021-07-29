@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11485,7 +11485,7 @@ If you discover any discreprancies or would like to contribute, please &lt;b&gt;
 <part name="TX1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:6240557/1"/>
 <part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28748/2" technology="-40LT1"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="LED_POWER" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:6240557/1"/>
+<part name="PWR" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:6240557/1"/>
 <part name="TEENSY" library="Teensy_3_and_LC_Series_Boards_v1.1" deviceset="TEENSY_3.1_DIL" device=""/>
 <part name="IC1" library="TP4056" deviceset="TP4056" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="102"/>
@@ -11629,7 +11629,7 @@ If you discover any discreprancies or would like to contribute, please &lt;b&gt;
 <attribute name="NAME" x="110.2614" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.062" y="72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED_POWER" gate="G$1" x="111.76" y="63.5" smashed="yes">
+<instance part="PWR" gate="G$1" x="111.76" y="63.5" smashed="yes">
 <attribute name="NAME" x="115.316" y="53.848" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="117.475" y="58.928" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -11831,7 +11831,7 @@ If you discover any discreprancies or would like to contribute, please &lt;b&gt;
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="111.76" y1="55.88" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -11955,7 +11955,7 @@ If you discover any discreprancies or would like to contribute, please &lt;b&gt;
 <segment>
 <wire x1="111.76" y1="66.04" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -12331,7 +12331,7 @@ If you discover any discreprancies or would like to contribute, please &lt;b&gt;
 <approved hash="113,1,73.331,141.918,CHARGED,,,,,"/>
 <approved hash="113,1,83.82,169.876,VUSB,,,,,"/>
 <approved hash="113,1,162.323,84.8639,SCRN,,,,,"/>
-<approved hash="113,1,85.265,122.83,BATT,,,,,"/>
+<approved hash="113,1,90.345,120.29,BATT,,,,,"/>
 <approved hash="113,1,167.679,150.77,ESTOP,,,,,"/>
 <approved hash="113,1,103.914,153.397,POWER,,,,,"/>
 </errors>
